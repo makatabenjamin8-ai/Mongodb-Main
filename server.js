@@ -28,6 +28,6 @@ const io = new Server(httpServer,{
 
 registerChatSocket(io);
 
-httpServer.listen(process.env.PORT, '127.0.0.1', () => {
+httpServer.listen(process.env.PORT, () => {
   console.log(`App Listening on PORT ${process.env.PORT}`);
 });
